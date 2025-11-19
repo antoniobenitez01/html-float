@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, posicionamiento, float"/>
+    <title>Playstation Zone</title>
+    <style>
+        
+        /*CUSTOM FONTS*/
+
+        @import url('https://fonts.cdnfonts.com/css/w95fa');
+        @import url('https://fonts.cdnfonts.com/css/playstation');
+        .w95fa{font-family: 'W95FA', sans-serif;}
+        .playstation{font-family: 'PlayStation', sans-serif;}
+
+        /*BODY*/
+
+        body{background-repeat: no-repeat; background-attachment: fixed; background-size: 100%; background: rgb(93,143,226);background: radial-gradient(circle, rgba(93,143,226,1) 0%, rgba(6,68,172,1) 35%, rgba(7,7,56,1) 100%);}
+        ul{padding-left:1.5em; padding-top:0; margin:0;}
+        li{list-style: none; font-size:1.5em;font-family: 'W95FA'; width:70%; margin:1em; margin-left:0; padding:1em;}
+        a{color:black; text-decoration:none}
+        p{font-family: 'W95FA'; margin-left:3em; margin-top:1em; font-size: 1.25em}
+        h2{font-size:2em; font-family:'Playstation'}
+        h1{font-family:'Playstation'; font-size:8em}
+        span{color:white}
+
+        /*DIV*/
+
+        div{border-style:none; border-radius:5px; width:100px; height:100px; margin:1em;}
+
+        div#menu{width:14.3%; height: 425px; margin-right:0;}
+        div#header{width:98%; height:250px;}
+        div#top{width:100%; height:50px;background-color:rgb(0, 0, 0);margin:0;margin-top:-5em; color:white;position:fixed}
+        div#top p{margin-right:2em;}
+        div#top a{color:white}
+        div#footer{width:98%; height:200px; text-align:center; color:white;}
+        div#footer a{color:rgb(200, 249, 255);}
+        div#content{width:81.4%; height: 1500px; margin-right:0}
+        .block{width:97%; height:460px; float:left}
+
+        /*CLASSES*/
+
+        .center {display: flex;justify-content: center;align-items: center;height: 200px;}
+        .strokemeh2 {text-shadow: -2px -2px 0 rgb(183, 208, 255), 2px -2px 0 rgb(183, 208, 255), -2px 2px 0 rgb(183, 208, 255), 2px 2px 0 rgb(183, 208, 255);}
+        .gradientchecker{border: solid black; background:repeating-linear-gradient(to right,transparent,transparent 50px,rgb(0, 0, 0) 50px,white 55px), repeating-linear-gradient(to bottom,transparent,transparent 50px,rgb(0, 0, 0) 50px,white 55px), linear-gradient(45deg, rgb(97, 97, 97), rgb(224, 224, 224));}
+        .w95block{background-color: #c5c5c5;color: rgb(0, 0, 0); border-style:solid; border-width:0.3em; border-color:grey; border-top-color:rgb(235, 235, 235); border-left-color:rgb(235, 235, 235)}
+        .w95h2block{background-color: #d8d8d8;color: rgb(0, 0, 0); border-style:solid; border-width:0.15em; border-color:white; border-top-color:grey; border-left-color:grey; width:auto; margin-right:1em;margin-left:1em; padding:0.15em; padding-left:0.3em}
+        .w95imgblock{background-color: #d8d8d8;color: rgb(0, 0, 0); border-style:solid; border-width:0.3em; border-color:white; border-top-color:grey; border-left-color:grey;}
+        .divimage{width:30%;margin-top:1em; margin-bottom:1em;}
+        .desktopimage{width:40%; image-rendering: pixelated; image-rendering: -moz-crisp-edges;  margin-left: auto; margin-right: auto;display: block;}
+        .desktop_p{font-size:1.2em; color:white; text-align:center; margin-top:0.3em;}
+        .center h1 {display: flex; justify-content: center; align-items: center; margin-top:1em; margin-bottom: 1em;}
+        .center_top {display: flex; justify-content: right; align-items: right; margin-top:1em; margin-bottom: 1em;vertical-align: middle;}
+        .center_top p {display: flex; justify-content: center; align-items: center; margin-top:1em; margin-bottom: 1em;}
+
+    </style>
+</head>
+<body>
+    <div id="top" class="center_top">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">PlayStation Zone</span> by <span property="cc:attributionName">Antonio Benítez Rodríguez</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </div>        
+    <div id="header" style="margin-bottom:0;margin-top:5em" class="center h1">
+        <h1 class="strokemeh2"><img src="playlogo.png" alt="Play" style="width:200px; margin-right:50px; float:left">PlayStation Zone</h1>
+    </div>
+    <div id="menu" style="float:left;" class="gradientchecker">
+        <ul>
+            <a href="#1"><li class="w95block">Playstation 1994</li></a>
+            <a href="#2"><li class="w95block">Crash Bandicoot</li></a>
+            <a href="#3"><li class="w95block">Castlevania: Symphony of the Night</li></a>
+        </ul>
+    </div>
+    <div id="content" style="float:inline-start" class="content gradientchecker">
+        <div class="block w95block" id="1">
+            <h2 class="w95h2block">PlayStation 1994</h2>  
+            <p><a href="https://es.wikipedia.org/wiki/PlayStation_(consola)"><img style="float:right; margin-right:2em; margin-left:2em; margin-top:0; width:40%" class="divimage w95imgblock" src="playstation.webp" alt="playstation"></a>
+            <b>PlayStation</b> es la primera <b>videoconsola</b> de sobremesa descontinuada producida por <b>Sony Computer Entertainment.</b> 
+            Fue lanzado en <b>Japón</b> el 3 de diciembre de <span>1994</span>, en <b>América del Norte</b> el 9 de septiembre de <span>1995</span>, en <b>Europa</b> 
+            el 29 de septiembre de <span>1995</span> y en <b>Australia</b> el 15 de noviembre de <span>1995</span>. Como consola de quinta generación, 
+            PlayStation compitió principalmente con <b>Nintendo 64</b> y el <b>Sega Saturn</b>.
+            <br><br><b>Sony</b> comenzó a desarrollar la PlayStation
+            después de un acuerdo fallido con <b>Nintendo</b> para crear un periférico de <b>CD-ROM</b> para <b>Super Nintendo Entertainment</b>
+            System a principios de la década de <span>1990</span>. La consola fue diseñada principalmente por <b>Ken Kutaragi</b> y Sony
+            Computer Entertainment en Japón, mientras que el desarrollo adicional se subcontrató en el <b>Reino Unido</b>.
+            Se puso énfasis en los gráficos de polígonos en tercera dimensión al frente del diseño de la consola.
+            La producción de juegos de PlayStation fue diseñada para ser optimizada e inclusiva, atrayendo el apoyo
+            de muchos desarrolladores externos.</p>
+        </div>
+        <div class="block w95block" id="2">
+            <h2 class="w95h2block">Crash Bandicoot</h2>
+            <p><a href="https://es.wikipedia.org/wiki/Crash_Bandicoot_(videojuego)"><img style="float:right; margin-right:2em; margin-left:2em; margin-top:0; width:30%" class="divimage w95imgblock" src="crash.jpg" alt="crash"></a>
+                <b>Crash Bandicoot</b> es un <b>videojuego de plataformas</b> desarrollado por <b>Naughty Dog</b> y publicado por <b>Sony Computer 
+                Entertainment</b> para la PlayStation en <span>1996</span>. El jugador controla a <b>Crash</b>, un bandicut mejorado genéticamente 
+                creado por el científico loco <b>Doctor Neo Cortex</b>. La trama sigue a Crash en su intento por rescatar a su novia Tawna, 
+                y frustrar los planes del científico Neo Cortex para dominar el mundo. Si bien el título cuenta principalmente con un 
+                <b>sistema de perspectiva en tercera persona</b>, algunos de sus <b>niveles</b> muestran una vista tanto lateral como frontal.
+                <br><br>
+                Después de aceptar un contrato de publicación de <b>Universal Interactive Studios</b>, los cofundadores de Naughty Dog, 
+                <b>Andy Gavin</b> y <b>Jason Rubin</b>, emprendieron un viaje por carretera a través del país desde Boston a Los Ángeles. Durante 
+                este tiempo, decidieron crear un juego de plataformas de acción basado en personajes desde una perspectiva tridimensional. 
+                Decidieron crear uno de ese tipo porque les pareció que era lo más popular en ese entonces en los dispositivos arcade o 
+                máquinas recreativas.</p>
+        </div>
+        <div class="block w95block" id="3">
+            <h2 class="w95h2block">Castlevania: Symphony of the Night</h2>
+            <p><a href="https://es.wikipedia.org/wiki/Castlevania:_Symphony_of_the_Night"><img style="float:right; margin-right:2em; margin-left:2em; margin-top:0; width:35%" class="divimage w95imgblock" src="castle.png" alt="castlevania"></a>
+                <b>Castlevania: Symphony of the Night</b>, es un <b>videojuego de acción-aventura</b> de gráficos 2D desarrollado y publicado por <b>Konami</b> 
+                en el año <span>1997</span>. Es el XIII episodio de las series de <b>Castlevania</b>, siendo este el primero lanzado para las consolas <b>PlayStation</b> 
+                y <b>Saturn</b>. Por otro lado, hablamos de una secuela directa de su antecesor solo lanzado en Japón: <b>Akumajou Dracula X: Chi no Rondo</b> 
+                para la plataforma de <b>NEC PC-Engine CD.</b>
+                <br><br>
+                Symphony of the Night fue un importante hito en la serie Castlevania. Revolucionó la franquicia por completo, alejándose de la 
+                fórmula estándar de plataformas «nivel por nivel» establecida por sus antecesores, exceptuando <b>Castlevania II</b> de <b>NES</b> (del cual toma muchas 
+                pautas), e introdujo un nuevo estilo de juego combinado con elementos <b>RPG</b> que sería imitado por casi todos los títulos que siguieron a este 
+                episodio.El desarrollo de todas sus características se atribuye a Koji Igarashi, el director del juego y uno de los miembros más jóvenes del 
+                equipo en ese entonces.</p>
+        </div>
+    </div>
+    <div id="footer" style="float:left; margin-top:0" class="footer">
+        <p style="margin-top:7em">Playstation Zone fue creado por Antonio Benítez Rodríguez en 2024, basado en la estética de los menús de la PlayStation 1, 
+        <br>como parte de una <a href="https://educacionadistancia.juntadeandalucia.es/centros/malaga/mod/assign/view.php?id=138286">práctica de posicionamiento Float</a> en el instituto IES Playamar.
+        Para más información sobre como utilizar los comandos float, haga click <a href="https://www.w3schools.com/css/css_float.asp"> aquí </a> </p>
+    </div>
+</body>
+</html>
